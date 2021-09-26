@@ -10,12 +10,12 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+}/* 
 body {
   background-image: url("fondo.jpg");
   background-repeat:round;
 
-}
+} */
 .App-header {
   background-color: #037003e5;
   min-height: 100vh;
