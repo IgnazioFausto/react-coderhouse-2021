@@ -1,11 +1,12 @@
 import React from 'react'
+import logo from './logo.png'; 
 
 
 export const CartWidget = () => {
 
     return (
         <div>
-            <img src="shopCart.png" alt="logo"/>
+            <img src={ logo } alt="logo"/>
         </div>
     )
 }

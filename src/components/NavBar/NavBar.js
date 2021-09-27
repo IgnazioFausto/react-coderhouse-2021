@@ -13,6 +13,7 @@ export const NavBar = () => {
             </nav>
             
             <CartWidget />
+            
         </header>
     )
 
