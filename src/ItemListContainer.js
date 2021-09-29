@@ -1,7 +1,7 @@
 import React from "react";
 
-export const ItemListContainer = () => {
+export const ItemListContainer = ({proximamente}) => {
     return(
-        <h4>CATÁLOGO DISPONIBLE PROXIMAMENTE</h4>
+        <h4>{proximamente}</h4>
     )
 }

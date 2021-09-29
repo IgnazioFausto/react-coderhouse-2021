@@ -7,7 +7,7 @@ function App() {
     <>
       <NavBar />
 
-      <ItemListContainer />
+      <ItemListContainer proximamente="CATÁLOGO DISPONIBLE PRÓXIMAMENTE" />
       
     </>
   );
