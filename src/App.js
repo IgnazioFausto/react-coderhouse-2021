@@ -1,13 +1,14 @@
-import './App.css';
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
 import { NavBar } from './components/NavBar/NavBar'
-import { ItemListContainer } from './ItemListContainer'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
 
 function App() {
   return (
     <>
       <NavBar />
 
-      <ItemListContainer proximamente="CATÁLOGO DISPONIBLE PRÓXIMAMENTE" />
+      {<ItemListContainer /> }
       
     </>
   );
