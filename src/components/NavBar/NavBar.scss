@@ -8,7 +8,7 @@ Nav.navbar {
         font-family: 'Raleway', sans-serif;
         font-weight: 900;
         font-size: 2.2rem;
-        margin: 0 4rem 0 1rem;
+        margin: 0 4rem 0 .6rem;
         color:white;
     }
     .nav {
@@ -17,31 +17,39 @@ Nav.navbar {
         align-items: center;
         margin: 0 4rem;
         background-color: transparent;
-        
     }
     .linkNav{
         font-family: 'Raleway', sans-serif;
+        font-size: 1.5rem;
         padding: 0rem 2rem;
         color:white;
+        font-weight: 100;
+        cursor: pointer;
+        text-decoration: none;
+       
+        }
+    .linkNavActive{
+        color:#75502d;
         font-weight: 900;
         cursor: pointer;
-        &:hover {
-            color:#4C6C14
-            ;
-
-        }
     }
+    }
+    
+    
     .widget {
         margin: 0 4rem;
         color:#75502d;
         font-size: 2.5rem;
+        min-width: 2.9rem;
     }
     .logo {
+        min-width: 4rem;
         font-size: 3rem;
         color: #4C6C14;
         transition-duration: 1s;
         &:hover {
-        color: #9cec1a;
+            color: #9cec1a;
         }
+    
+        
     }
-}

@@ -1,21 +1,24 @@
 import React from 'react'
-import {Card, Button} from 'react-bootstrap'
-import './Items.scss'
+import { Card } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import { TarjetaItem } from './StyledComponents/Card'
+import { CardTitle } from './StyledComponents/Card.Title'
+import { Boton } from './StyledComponents/Boton'
 
-export const Item = ( {id, name, precio, img} ) => {
-
+export const Item = ({ id, name, precio, img, category }) => {
 
     return (
 
-        <Card className="tarjeta">
+        <TarjetaItem>
             <Card.Img variant="top" src={img} />
             <Card.Body>
-                <Card.Title>{name}</Card.Title>
-                <Card.Text></Card.Text>
+                <CardTitle>{name}</CardTitle>
                 <Card.Text>Precio: ${precio}</Card.Text>
 
-                <Button variant="primary">Agregar a la cesta</Button>
+                <Link to={`/detail/${id}`}>
+                    <Boton>Ver producto</Boton>
+                </Link>
             </Card.Body>
-        </Card>
+        </TarjetaItem>
     )
 }

@@ -1,0 +1,23 @@
+.loadIcon {
+    width: 18rem;
+    display: inline-block;
+    border-radius:50%;
+    margin: 9rem auto;
+
+    animation-name:rotate;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.loadIcon , .loadIcon:before , .loadIcon:after{
+    position:relative;
+    display: flex;
+    width:18rem;
+    height:18rem;
+  }
+  @keyframes rotate{
+
+    100%{
+      transform:rotate(360deg);
+    }
+  }

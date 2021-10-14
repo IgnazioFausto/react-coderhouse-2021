@@ -1,62 +1,82 @@
 export const productos = [
     {
         id: 1,
-        name: "coco",
+        name: "Coco",
         precio: 50,
-        img: "./src/img/coco.jpg"
+        img: "/img/coco.jpg",
+        category: 'fruta',
+        description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
         id: 2,
-        name: "manzana",
+        name: "Manzana",
         precio: 30,
-        img: "/img/manzana.jpg"
+        img: "/img/manzana.jpg",
+        category: 'fruta'
+ ,       description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
         id: 3,
-        name: "kiwi",
+        name: "Kiwi",
         precio: 60,
-        img: "/img/kiwi.jpg"
+        img: "/img/kiwi.jpg",
+        category: 'fruta'
+ ,       description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
         id: 4,
-        name: "acelga",
+        name: "Acelga",
         precio: 20,
-        img: "/img/acelga.jpg"
+        img: "/img/acelga.jpg",
+        category: 'verdura',
+        description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
         id: 5,
-        name: "banana",
+        name: "Banana",
         precio: 45,
-        img: "/img/banana.jpg"
+        img: "/img/banana.jpg",
+        category: 'fruta'
+ ,       description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
         id: 6,
-        name: "cebolla",
+        name: "Cebolla",
         precio: 35,
-        img: "/img/cebolla.jpg"
+        img: "/img/cebolla.jpg",
+        category: 'verdura',
+        description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
         id: 7,
-        name: "naranja",
+        name: "Naranja",
         precio: 50,
-        img: "/img/naranja.jpg"
+        img: "/img/naranja.jpg",
+        category: 'fruta'
+ ,       description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
         id: 8,
-        name: "papa",
+        name: "Papa",
         precio: 25,
-        img: "/img/papa.jpg"
+        img: "/img/papa.jpg",
+        category: 'verdura',
+        description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
         id: 9,
-        name: "tomate",
+        name: "Tomate",
         precio: 55,
-        img: "/img/tomate.jpg"
+        img: "/img/tomate.jpg",
+        category: 'verdura',
+        description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
         id: 10,
-        name: "zapallo ingles",
+        name: "Zapallo Inglés",
         precio: 20,
-        img: "/img/zapallo-ingles.jpg"
+        img: "/img/zapallo-ingles.jpg",
+        category: 'verdura',
+        description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     }
 ]
