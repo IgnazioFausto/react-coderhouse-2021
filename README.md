@@ -9,6 +9,9 @@ Mi Huertapp es un sitio web de tipo SPA con carrito de compras incluído. Los pr
 -[Contacto]: Sección de contacto.
 -[Carrito]: Carrito de compras donde se irán sumando los productos seleccionados.
 
+# Muestra te página (temporal)
+-[Gif de navegabilidad](https://media.giphy.com/media/Ml7u2VDvD6Kz6DcdHy/giphy.gif)
+
 # Dependencias de base
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
