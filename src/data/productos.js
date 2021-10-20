@@ -5,6 +5,7 @@ export const productos = [
         precio: 50,
         img: "/img/coco.jpg",
         category: 'fruta',
+        quantity: 30,
         description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
@@ -12,16 +13,18 @@ export const productos = [
         name: "Manzana",
         precio: 30,
         img: "/img/manzana.jpg",
-        category: 'fruta'
- ,       description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
+        category: 'fruta',
+        quantity: 20,
+        description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
         id: 3,
         name: "Kiwi",
         precio: 60,
         img: "/img/kiwi.jpg",
-        category: 'fruta'
- ,       description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
+        category: 'fruta',
+        quantity: 10,
+        description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
         id: 4,
@@ -29,6 +32,7 @@ export const productos = [
         precio: 20,
         img: "/img/acelga.jpg",
         category: 'verdura',
+        quantity: 15,
         description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
@@ -36,8 +40,9 @@ export const productos = [
         name: "Banana",
         precio: 45,
         img: "/img/banana.jpg",
-        category: 'fruta'
- ,       description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
+        category: 'fruta',
+        quantity: 52,
+        description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
         id: 6,
@@ -45,6 +50,7 @@ export const productos = [
         precio: 35,
         img: "/img/cebolla.jpg",
         category: 'verdura',
+        quantity: 27,
         description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
@@ -52,8 +58,9 @@ export const productos = [
         name: "Naranja",
         precio: 50,
         img: "/img/naranja.jpg",
-        category: 'fruta'
- ,       description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
+        category: 'fruta',
+        quantity: 64,
+        description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
         id: 8,
@@ -61,6 +68,7 @@ export const productos = [
         precio: 25,
         img: "/img/papa.jpg",
         category: 'verdura',
+        quantity: 80,
         description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
@@ -69,6 +77,7 @@ export const productos = [
         precio: 55,
         img: "/img/tomate.jpg",
         category: 'verdura',
+        quantity: 51,
         description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     },
     {
@@ -77,6 +86,7 @@ export const productos = [
         precio: 20,
         img: "/img/zapallo-ingles.jpg",
         category: 'verdura',
+        quantity: 20,
         description: "Ipsum tortor nibh, pellentesque sed interdum vel, varius ut leo. Quisque eu luctus neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed luctus vestibulum luctus. Nunc sagittis, enim vel condimentum fringilla, nulla elit volutpat felis, vel gravida enim ex sed lorem. Vivamus pulvinar elementum tortor ut cursus. In tempor tristique scelerisque."
     }
 ]
