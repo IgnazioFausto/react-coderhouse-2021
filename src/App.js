@@ -2,7 +2,6 @@ import { ItemListContainer } from './components/ItemListContainer/ItemListContai
 import { NavBar } from './components/NavBar/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-import { HomeView } from './components/ItemListContainer/HomeView'
 import { Contacto } from './components/ItemListContainer/Contacto'
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer'
 import {
@@ -23,7 +22,7 @@ function App() {
 
         <Switch>
           <Route exact path="/home">
-            <HomeView />
+            <ItemListContainer />
           </Route>
           <Route exact path="/contacto">
             <Contacto />

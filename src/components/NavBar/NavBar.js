@@ -8,8 +8,8 @@ import { BsFillBasketFill } from "react-icons/bs";
 export const NavBar = () => {
     return (
         <Navbar className="navbar navbar-dark" sticky="top">
-            <BrandLogo />
-            <Navbar.Brand className="titulo">Mi Huert<i>app</i></Navbar.Brand>
+            <BrandLogo  />
+            <NavLink className="titulo" exact to="/home">Mi Huert<i>app</i></NavLink>
             <Nav className="nav" >
                 <NavLink className="linkNav" activeClassName={'linkNavActive'} exact to="/home">Home</NavLink>
                 <NavLink className="linkNav" activeClassName={'linkNavActive'} exact to="/productos/fruta">Frutas</NavLink>
