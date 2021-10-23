@@ -10,38 +10,43 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom'
-import { Cart } from './components/NavBar/Cart'
-
+import { CartContainer } from './components/CartContent/CartContainer'
+import { CartProvider } from './context/CartContext'
 
 function App() {
+
   return (
     <>
-      <BrowserRouter>
+      <CartProvider>
 
-        <NavBar />
+        <BrowserRouter>
 
-        <Switch>
-          <Route exact path="/home">
-            <ItemListContainer />
-          </Route>
-          <Route exact path="/contacto">
-            <Contacto />
-          </Route>
-          <Route exact path="/productos/:categoryId">
-            <ItemListContainer />
-          </Route>
-          <Route exact path="/detail/:itemId">
-            <ItemDetailContainer />
-          </Route>
-          <Route exact path="/cart">
-            <Cart />
-          </Route>
-          <Route>
-            <Redirect to="/home" />
-          </Route>
-        </Switch>
+          <NavBar />
 
-      </BrowserRouter>
+          <Switch>
+            <Route exact path="/home">
+              <ItemListContainer />
+            </Route>
+            <Route exact path="/contacto">
+              <Contacto />
+            </Route>
+            <Route exact path="/productos/:categoryId">
+              <ItemListContainer />
+            </Route>
+            <Route exact path="/detail/:itemId">
+              <ItemDetailContainer />
+            </Route>
+            <Route exact path="/cart">
+              <CartContainer />
+            </Route>
+            <Route>
+              <Redirect to="/home" />
+            </Route>
+          </Switch>
+
+        </BrowserRouter>
+
+      </CartProvider>
     </>
   );
 }

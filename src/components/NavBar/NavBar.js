@@ -3,7 +3,8 @@ import './NavBar.scss'
 import { Navbar, Nav } from 'react-bootstrap'
 import { BrandLogo } from './BrandLogo'
 import { NavLink } from 'react-router-dom'
-import { BsFillBasketFill } from "react-icons/bs";
+import { CartWidget } from './CartWidget'
+
 
 export const NavBar = () => {
     return (
@@ -15,7 +16,7 @@ export const NavBar = () => {
                 <NavLink className="linkNav" activeClassName={'linkNavActive'} exact to="/productos/fruta">Frutas</NavLink>
                 <NavLink className="linkNav" activeClassName={'linkNavActive'} exact to="/productos/verdura">Verduras</NavLink>
                 <NavLink className="linkNav" activeClassName={'linkNavActive'} exact to="/contacto">Contacto</NavLink>
-                <NavLink className="linkNav" activeClassName={'linkNavActive'} exact to="/cart"><BsFillBasketFill className="widget"/></NavLink>
+                <NavLink exact to="/cart"><CartWidget/></NavLink>
                 
             </Nav>
 

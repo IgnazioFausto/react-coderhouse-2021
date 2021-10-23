@@ -28,7 +28,7 @@ Nav.navbar {
         cursor: pointer;
         text-decoration: none;
        
-        }
+    }
     .linkNavActive{
         color:#75502d;
         font-weight: 900;
@@ -38,10 +38,26 @@ Nav.navbar {
     
     
     .widget {
-        margin: 0 4rem;
+        margin: 0 .5rem 0 3rem;
         color:#75502d;
         font-size: 2.5rem;
+        text-decoration: none;
         min-width: 2.9rem;
+        transition-duration: .5s;
+        &:hover {
+            color:#9e6d3e;
+        }
+    }
+    .counter {
+        color:#75502d;
+        font-size: 1.5rem;
+        font-family: 'Raleway', sans-serif;
+        margin: 1rem auto;
+        text-decoration: none;
+        vertical-align: bottom;
+    }
+    a.active {
+        text-decoration: none;
     }
     .logo {
         min-width: 4rem;

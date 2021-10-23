@@ -82,7 +82,7 @@ export const productos = [
     },
     {
         id: 10,
-        name: "Zapallo Inglés",
+        name: "Zapallo",
         precio: 20,
         img: "/img/zapallo-ingles.jpg",
         category: 'verdura',

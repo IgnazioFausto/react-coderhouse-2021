@@ -16,12 +16,12 @@ export const ItemCount = ({ quantity, cantidad, setCantidad }) => {
             <br/>
             <button
                 onClick={handleRestar}
-                className="btn btn-outline-info">-
+                className="btn btn-success"> - 
             </button>
             <span className="mx-3">{cantidad} Kg</span>
             <button
                 onClick={handleSumar}
-                className="btn btn-outline-info">+
+                className="btn btn-success">+
             </button>
         </div>
     )
