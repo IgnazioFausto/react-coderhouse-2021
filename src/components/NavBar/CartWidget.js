@@ -14,6 +14,7 @@ export const CartWidget = () => {
             ?
             <>
                 <BsFillBasketFill className="widget" />
+                <span style={{visibility: calcularCantidad() === 0 ? "hidden" : "visible"}}>{calcularCantidad()}Kg</span>
             </>
             :
             <>

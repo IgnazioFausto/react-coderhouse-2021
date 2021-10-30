@@ -16,12 +16,12 @@ export const ItemCount = ({ quantity, cantidad, setCantidad }) => {
             <br/>
             <button
                 onClick={handleRestar}
-                className="btn btn-success"> - 
+                className={`btn ${cantidad === 0 ? "invisible" : "btn-success"}`}> - 
             </button>
             <span className="mx-3">{cantidad} Kg</span>
             <button
                 onClick={handleSumar}
-                className="btn btn-success">+
+                className={`btn ${cantidad >= quantity ? "invisible" : "btn-success"}`}>+
             </button>
         </div>
     )

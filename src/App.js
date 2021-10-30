@@ -39,7 +39,7 @@ function App() {
             <Route exact path="/cart">
               <CartContainer />
             </Route>
-            <Route>
+            <Route path="/*">
               <Redirect to="/home" />
             </Route>
           </Switch>

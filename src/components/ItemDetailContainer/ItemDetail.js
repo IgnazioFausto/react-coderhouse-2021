@@ -4,7 +4,6 @@ import { Card } from 'react-bootstrap'
 import { CardItemDetail } from '../ItemListContainer/StyledComponents/CardItemDetail'
 import { CardTitle } from '../ItemListContainer/StyledComponents/Card.Title'
 import { CardItemImg } from '../ItemListContainer/StyledComponents/CardItemImg'
-import { Boton } from '../../components/ItemListContainer/StyledComponents/Boton'
 import { CardText } from '../ItemListContainer/StyledComponents/CardText'
 import { ItemCount } from '../ItemCount/ItemCount'
 import { CartContext } from '../../context/CartContext'
@@ -12,7 +11,7 @@ import { Link } from 'react-router-dom'
 
 export const ItemDetail = ({ id, name, precio, img, description, category, quantity }) => {
 
-    const { goBack, push } = useHistory()
+    const { push } = useHistory()
 
     const [cantidad, setCantidad] = useState(0)
 
@@ -51,13 +50,13 @@ export const ItemDetail = ({ id, name, precio, img, description, category, quant
                 :
                 <>
                     <ItemCount quantity={quantity} cantidad={cantidad} setCantidad={setCantidad} />
-                    <Boton onClick={handleAdd}>Agregar a la cesta</Boton>
+                    <button className={`btn ${cantidad === 0  ? "mt-3 invisible" : "mt-3 btn-success"}`} onClick={handleAdd}>Agregar a la cesta</button>
                 </>
                 }
                 <hr />
                 <button
                     className="btn btn-outline-success"
-                    onClick={() => goBack()}
+                    onClick={() => push(`/productos/${category}`)}
                 >
                     Volver a {category}s
                 </button>

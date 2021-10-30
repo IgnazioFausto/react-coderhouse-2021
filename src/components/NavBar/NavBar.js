@@ -16,7 +16,7 @@ export const NavBar = () => {
                 <NavLink className="linkNav" activeClassName={'linkNavActive'} exact to="/productos/fruta">Frutas</NavLink>
                 <NavLink className="linkNav" activeClassName={'linkNavActive'} exact to="/productos/verdura">Verduras</NavLink>
                 <NavLink className="linkNav" activeClassName={'linkNavActive'} exact to="/contacto">Contacto</NavLink>
-                <NavLink exact to="/cart"><CartWidget/></NavLink>
+                <NavLink  className="linkNav" activeClassName={'linkNavActive'} exact to="/cart"><CartWidget/></NavLink>
                 
             </Nav>
 

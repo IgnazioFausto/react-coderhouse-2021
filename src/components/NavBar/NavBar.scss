@@ -24,15 +24,15 @@ Nav.navbar {
         font-size: 1.5rem;
         padding: 0rem 2rem;
         color:white;
-        font-weight: 100;
-        cursor: pointer;
+        font-weight: 900;
         text-decoration: none;
+        cursor: pointer;
        
     }
     .linkNavActive{
         color:#75502d;
         font-weight: 900;
-        cursor: pointer;
+        text-decoration: none;
     }
     }
     
@@ -49,7 +49,7 @@ Nav.navbar {
         }
     }
     .counter {
-        color:#75502d;
+        font-weight: 900;
         font-size: 1.5rem;
         font-family: 'Raleway', sans-serif;
         margin: 1rem auto;
