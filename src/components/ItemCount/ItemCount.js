@@ -10,9 +10,9 @@ export const ItemCount = ({ quantity, cantidad, setCantidad }) => {
         setCantidad(cantidad + 1)}
     }
     return (
-
+            
         <div>
-            <div>Stock:{quantity}kg</div>
+            <div>Stock: {quantity} kg.</div>
             <br/>
             <button
                 onClick={handleRestar}

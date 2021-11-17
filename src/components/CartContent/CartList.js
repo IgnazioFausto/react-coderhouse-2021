@@ -1,45 +1,52 @@
 import React from "react";
-import { Card } from "react-bootstrap";
 import { useContext } from "react";
+import { Card } from "react-bootstrap";
 import { CardTitle } from "../ItemListContainer/StyledComponents/Card.Title";
 import { CartContext } from "../../context/CartContext";
-import { HiLogin } from 'react-icons/hi'
+import { HiOutlineBackspace, HiReply } from 'react-icons/hi'
+import { Link } from "react-router-dom";
+import { CardText } from "../ItemListContainer/StyledComponents/CardText";
+import { BrandLogo } from "../NavBar/BrandLogo";
 
-export const CartList = ({ id, name, precio, img, description, category, quantity }) => {
-
-
-    
+export const CartList = () => {
 
     const { cart,
         removeItem,
         vaciarCarrito,
         calcularTotal,
+        calcularCantidad
     } = useContext(CartContext)
 
     return (
-        <div className="container m-3 text-center" style={{padding:'0 35%'}}>
-            <Card>
+        //mapeamos en una card los productos del cart, tomados desde el CartContext
+        <div className="container text-center">
+            <Card style={{ maxWidth: '300px', margin: '1rem auto' }}>
                 <div className="card-body">
-                    <h2>Resumen de tu compra</h2>
-                    
-                    {
-                        cart.map((prod) => (
-                            <Card>
-                                <hr/>
+                    <CardText style={{ width: '100%', fontSize: '2rem', margin: '0 auto', padding: '0' }}>Resumen de tu compra</CardText>
 
-                                <CardTitle><th>{prod.name}</th></CardTitle>
-
-                                <th>{prod.cantidad} Kg.</th>
-                                <th>Precio: ${prod.precio * prod.cantidad}</th>
-                                <th><button className="btn btn-outline-danger" onClick={() => removeItem(prod.id)}><HiLogin /> Quitar de la lista</button></th>
-
+                    {   /* generamos las cartas con key usando position */
+                        cart.map((prod, pos) => (
+                            <Card key={pos}>
+                                <hr />
+                                <img alt="imagen de producto" style={{ width: '6rem', margin: '0 auto' }} src={prod.img} />
+                                <CardTitle>{prod.name}</CardTitle>
+                                <CardText>{prod.cantidad} Kg.</CardText>
+                                <CardText>Precio: ${prod.precio * prod.cantidad}</CardText>
+                                <button className="btn btn-outline-danger" style={{ margin: '0 auto', maxWidth: '12rem' }} onClick={() => removeItem(prod.id)}>Quitar de la lista <HiOutlineBackspace /></button>
+                                <Link className="btn btn-outline-success mt-2" style={{ margin: '0 auto', maxWidth: '12rem' }} to={`/detail/${prod.id}`} onClick={() => removeItem(prod.id)}><HiReply /> Elegir otra cantidad </Link>
                             </Card>
                         ))
                     }
                     <hr />
                     <CardTitle>Total a pagar: ${calcularTotal()}</CardTitle>
-                    <button className="btn btn-outline-danger mt-5" onClick={vaciarCarrito}>Vaciar pedido</button>
-                    <button className="btn btn-outline-success mt-5 ms-3">Finalizar compra</button>
+                    <CardText>Total de kilos: {calcularCantidad()}</CardText>
+                    <hr />
+                    <button className="btn btn-outline-danger m-2" onClick={vaciarCarrito}>Vaciar pedido</button>
+                    <Link className="btn btn-outline-success m-2" to="/checkout">Finalizar pedido</Link>
+                    <Link className="btn btn-success m-2" to="/home">Seguir agregando productos</Link>
+                    <hr />
+                    <BrandLogo />
+                    <CardText>Mi Huertapp 2021</CardText>
                 </div>
             </Card>
         </div>

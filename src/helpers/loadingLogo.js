@@ -1,6 +1,6 @@
 import React from "react";
 import loadIcon from './img-loading/fruit-vector.svg'
-import './loading.scss'
+import './loadingLogo.scss'
 
 export const Loading = () => {
     return (

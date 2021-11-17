@@ -13,16 +13,16 @@ export const CartContainer = () => {
     return (
         <div className="container">
 
-            {
+            {   
                 cart.length === 0
-                    ?
-                    <>
-                        <CartListEmpty />
-                    </>
-                    :
-                    <>
-                        <CartList />
-                    </>
+                ?   //si el cart está vacío.
+                <>
+                    <CartListEmpty /> 
+                </>
+                :   //si el cart tiene productos.
+                <>
+                    <CartList />
+                </>
             }
 
         </div>
