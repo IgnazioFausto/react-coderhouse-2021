@@ -19,16 +19,15 @@ Está creada con create-react-app v 17.0.2 en Node.js v v14.18.1
 
 Pc
 
-![Gif de navegabilidad pc] <img src="https://github.com/IgnazioFausto/react-coderhouse-2021/blob/345e4307cf789cba2f5892e7b71a66dab146abc9/src/helpers/gifs/Mi%20Huertapp%20tablet.gif">
+<img src="https://github.com/IgnazioFausto/react-coderhouse-2021/blob/345e4307cf789cba2f5892e7b71a66dab146abc9/src/helpers/gifs/Mi%20Huertapp%20tablet.gif">
 
 Tablet
 
-![Gif de navegabilidad tablet] (https://github.com/IgnazioFausto/react-coderhouse-2021/blob/345e4307cf789cba2f5892e7b71a66dab146abc9/src/helpers/gifs/Mi%20Huertapp%20tablet.gif)
+<img src="https://github.com/IgnazioFausto/react-coderhouse-2021/blob/e6cfb673fad399611bc8737484bc6422670b26c8/src/helpers/gifs/Mi%20Huertapp%20tablet.gif">
 
 Phone
 
-![Gif de navegabilidad phone] (https://github.com/IgnazioFausto/react-coderhouse-2021/blob/345e4307cf789cba2f5892e7b71a66dab146abc9/src/helpers/gifs/Mi%20Huertapp%20phone.gif)
-
+<img src="https://github.com/IgnazioFausto/react-coderhouse-2021/blob/e6cfb673fad399611bc8737484bc6422670b26c8/src/helpers/gifs/Mi%20Huertapp%20phone.gif">
 
 
 # Dependencias empleadas [DevDependencies]
