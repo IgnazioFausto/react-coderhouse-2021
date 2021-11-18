@@ -12,11 +12,14 @@ Está creada con create-react-app v 17.0.2 en Node.js v v14.18.1
 -[Contacto]: Sección de contacto. 
 -[Carrito]: Carrito de compras donde se irán sumando los productos seleccionados. Tiene la opción de revisar el pedido o avanzar con la compra hacia un checkout, donde se ingresan los datos para realizar el pedido. Una vez realizada la orden se le brinda un ID al usuario para manejar luego su orden.
 
+# Funcionalidades
+ 
+
 # Navegabilidad
 
 Pc
 
-![Gif de navegabilidad pc] (https://github.com/IgnazioFausto/react-coderhouse-2021/blob/345e4307cf789cba2f5892e7b71a66dab146abc9/src/helpers/gifs/Mi%20Huertapp.gif)
+![Gif de navegabilidad pc] (src/helpers/gifs/Mi Huertapp.gif)
 
 Tablet
 
