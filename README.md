@@ -19,7 +19,7 @@ Está creada con create-react-app v 17.0.2 en Node.js v v14.18.1
 
 Pc
 
-<img src="https://github.com/IgnazioFausto/react-coderhouse-2021/blob/345e4307cf789cba2f5892e7b71a66dab146abc9/src/helpers/gifs/Mi%20Huertapp%20tablet.gif">
+<img src="https://github.com/IgnazioFausto/react-coderhouse-2021/blob/3c77ce12dd1e711da7fc565d289401bb4a4ecd52/src/helpers/gifs/Mi%20Huertapp.gif">
 
 Tablet
 
