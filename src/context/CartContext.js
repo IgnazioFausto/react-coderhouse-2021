@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 
 export const CartContext = createContext()
 
+//Contexto del cart con todas sus funciones
 
 const initCart = JSON.parse(localStorage.getItem('carrito')) || []
 
@@ -31,7 +32,7 @@ export const CartProvider = ({ children }) => {
     const isInCart = (itemId) => {
         return cart.some( (prod) => prod.id === itemId)
     }
-
+    //guardamos el cart en localStorage cada vez que cambia
     useEffect(() => {
         localStorage.setItem('carrito', JSON.stringify(cart))
     }, [cart])

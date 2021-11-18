@@ -8,6 +8,9 @@ import { CartWidget } from './CartWidget'
 
 export const NavBar = () => {
     return (
+
+        //desarrollamos el navbar con NavLink's del 'react-router-dom'
+        //y Navbar, Nav y Container de 'react-bootstrap'
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
                 <BrandLogo />
@@ -15,6 +18,7 @@ export const NavBar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className="logo"/> 
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto nav">
+                        {/* navlinks tienen un estado activado para mejorar la UX */}
                         <NavLink className="linkNav" activeClassName={'linkNavActive'} exact to="/home">Home</NavLink>
                         <NavLink className="linkNav" activeClassName={'linkNavActive'} exact to="/productos/fruta">Frutas</NavLink>
                         <NavLink className="linkNav" activeClassName={'linkNavActive'} exact to="/productos/verdura">Verduras</NavLink>

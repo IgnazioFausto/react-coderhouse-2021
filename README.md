@@ -1,18 +1,18 @@
 # Mi Huertapp
 
-//Proyecto CoderHouse 2021 React JS
+//Proyecto CoderHouse 2021 React JS (finalizado 17/11/2021)
 
 Mi Huertapp es un sitio web de tipo SPA con carrito de compras incluído. Los productos en venta son frutas y verduras de procedencia orgánica.
 Está creada con create-react-app v 17.0.2 en Node.js v v14.18.1
 
 # Secciones principales
 
--[Homeview]: Entrada a la página. Presentación.
--[Sección-fruta/verdura]: Secciones que muestran los productos.
+-[Homeview]: Entrada a la página. Se muestran todos los productos. Desde aquí se puede navegar a cualquier producto.
+-[Sección-fruta/verdura]: Secciones que muestran los productos filtradas por su category en firestore.
 -[Contacto]: Sección de contacto. 
--[Carrito]: Carrito de compras donde se irán sumando los productos seleccionados.
+-[Carrito]: Carrito de compras donde se irán sumando los productos seleccionados. Tiene la opción de revisar el pedido o avanzar con la compra hacia un checkout, donde se ingresan los datos para realizar el pedido. Una vez realizada la orden se le brinda un ID al usuario para manejar luego su orden.
 
-# Muestra te página (temporal)
+# Gif
 
 -[Gif de navegabilidad](https://media.giphy.com/media/Ml7u2VDvD6Kz6DcdHy/giphy.gif)
 

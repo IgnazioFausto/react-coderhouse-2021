@@ -24,7 +24,7 @@ export const CartList = () => {
                 <div className="card-body">
                     <CardText style={{ width: '100%', fontSize: '2rem', margin: '0 auto', padding: '0' }}>Resumen de tu compra</CardText>
 
-                    {   /* generamos las cartas con key usando position */
+                    {   /* generamos las cards con key usando position */
                         cart.map((prod, pos) => (
                             <Card key={pos}>
                                 <hr />
@@ -40,7 +40,8 @@ export const CartList = () => {
                     <hr />
                     <CardTitle>Total a pagar: ${calcularTotal()}</CardTitle>
                     <CardText>Total de kilos: {calcularCantidad()}</CardText>
-                    <hr />
+                    <hr /> 
+                    {/* botones vaciar cart, finalizar pedido (lleva al Checkout) y agregar más productos (lleva al ItemListContainer) */}
                     <button className="btn btn-outline-danger m-2" onClick={vaciarCarrito}>Vaciar pedido</button>
                     <Link className="btn btn-outline-success m-2" to="/checkout">Finalizar pedido</Link>
                     <Link className="btn btn-success m-2" to="/home">Seguir agregando productos</Link>

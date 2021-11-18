@@ -11,7 +11,7 @@ import { CardText } from './StyledComponents/CardText'
 export const Item = ({ id, name, precio, img }) => {
 
     
-
+    
     return (
         < TarjetaItem className="p-3" >
             <Card.Body>
@@ -19,6 +19,7 @@ export const Item = ({ id, name, precio, img }) => {
                 <CardTitle>{name}</CardTitle>
                 <CardText>Precio: ${precio}</CardText>
             </Card.Body>
+            {/* llevamos al detalle (ItemDetail) mediante el id pasado por prop que viene desde Firestore */}
             <Link to={`/detail/${id}`}>
                 <Boton>Ver producto</Boton>
             </Link>

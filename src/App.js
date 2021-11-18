@@ -26,7 +26,7 @@ function App() {
           <BrowserRouter>
 
             <NavBar />
-
+            {/* en caso de ingresarse una URL no definida, se redirecciona al Home */}
             <NoMatch render={ match => (match ? null : <ItemListContainer />) } alwaysRender={ true }>
               
               <Route exact path="/home">
@@ -35,10 +35,10 @@ function App() {
               <Route exact path="/contacto">
                 <Contacto />
               </Route>
-              <Route exact path="/productos/:categoryId">
+              <Route exact path="/productos/:categoryId"> {/* filtramos por categoria (fruta/verdura) */}
                 <ItemListContainer />
               </Route>
-              <Route exact path="/detail/:itemId">
+              <Route exact path="/detail/:itemId"> {/* llevamos al detalle del producto, a través del id automático de la base de datos (Firebase/firestore) */}
                 <ItemDetailContainer  />
               </Route>
               <Route exact path="/cart">

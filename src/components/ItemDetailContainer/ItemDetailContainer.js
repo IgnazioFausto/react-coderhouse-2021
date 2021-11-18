@@ -13,15 +13,16 @@ export const ItemDetailContainer = () => {
 
     const { loading, setLoading } = useContext(UIContext)
 
-    
     useEffect(() => {
 
-        setLoading(true)
+        setLoading(true) 
 
+        
+        //obtenemos los datos desde firestore 
         const db = getFirestore()
         const productos = db.collection('productos')
         const item = productos.doc(itemId)
-
+        //hacemos un get de los documentos dentro de la colección productos y seteamos los items
         item.get()
             .then(doc => {
                 setItem({
@@ -37,7 +38,7 @@ export const ItemDetailContainer = () => {
     
     return (
             <div>
-                {
+                { //mostramos en el ItemDetail los items desde bd
                     loading
                         ? <LoadingFull />
                         : <ItemDetail {...item} />

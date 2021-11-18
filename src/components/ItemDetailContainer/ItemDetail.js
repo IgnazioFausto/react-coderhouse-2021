@@ -18,6 +18,7 @@ export const ItemDetail = ({ id, name, precio, img, description, category, quant
 
     const { addToCart, isInCart, removeItem } = useContext(CartContext)
 
+    // para controlar el agregar los items
     const handleAdd = () => {
         
         const newItem = {
@@ -28,6 +29,7 @@ export const ItemDetail = ({ id, name, precio, img, description, category, quant
             cantidad,
             img
         }
+        //condicionamos para que no se agreguen items con cantidad 0
         if (cantidad > 0) {
             addToCart(newItem)
         }
@@ -43,7 +45,7 @@ export const ItemDetail = ({ id, name, precio, img, description, category, quant
                 <CardText>{description}</CardText>
                 <hr />
 
-                {
+                { //condicionamos, si está en el carrito
                     isInCart(id)
                         ?
                         <>
@@ -51,7 +53,8 @@ export const ItemDetail = ({ id, name, precio, img, description, category, quant
                             <span style={{ display: 'block', margin: '1rem auto' }}>o si quieres...</span> <button onClick={() => removeItem(id)} className="btn btn-success mx-3">Elige otra cantidad</button>
                         </>
                         :
-                        <>  { quantity === 0
+                        <>  { //condicionamos de nuevo, para revisar si tenemos stock en bd 
+                            quantity === 0
                             ?
                             <CardTitle style={{fontSize: '1.5rem', color: 'green'}}>De momento sin stock.</CardTitle>
                             :

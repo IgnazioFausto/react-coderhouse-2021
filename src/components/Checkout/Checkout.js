@@ -19,6 +19,7 @@ export const Checkout = () => {
 
     const { cart, calcularTotal, vaciarCarrito } = useContext(CartContext)
 
+    //valores obtenidos desde el form
     const [values, setValues] = useState({
         nombre: '',
         apellido: '',
@@ -27,7 +28,7 @@ export const Checkout = () => {
         validation: ''
     })
 
-
+    //para manejar el cambio al escribir en cada input
     const handleInputChange = (e) => {
         setValues({
             ...values,
@@ -79,6 +80,7 @@ export const Checkout = () => {
                     confirmButtonColor: '#E97333'
                 }))
         }
+        //validamos si coinciden los correos electrónicos ingresados
         if (values.email === values.validation) {
 
             setLoading(true)
@@ -98,6 +100,7 @@ export const Checkout = () => {
                     })
                 })
                 .catch((err) => {
+                    /* mapeamos el err que contiene los productos sin stock */
                     Swal.fire({
                         icon: 'error',
                         iconColor: 'red',

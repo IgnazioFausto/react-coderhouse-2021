@@ -17,10 +17,10 @@ export const ItemListContainer = () => {
     try {
         useEffect(() => {
             setLoading(true)
-
+            //hacemos la llamada a la bd
             const db = getFirestore();
             const productos = db.collection('productos');
-
+            //condicionamos la respuesta si tiene categoryId (para las secciones fruta/verdura)
             if (categoryId) {
                 const filtrado = productos.where('category', '==', categoryId)
                 filtrado.get()
@@ -38,7 +38,7 @@ export const ItemListContainer = () => {
 
             } else {
 
-
+                //si la respuesta no tiene categoryId se renderizan todos los productos (en el ItemListContainer)
                 productos.get()
                     .then((response) => {
                         const newItems = response.docs.map((doc) => {

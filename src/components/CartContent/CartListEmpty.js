@@ -9,7 +9,7 @@ export const CartListEmpty = () => {
 
     const { push } = useHistory()
 
-    return ( //Cuando está vacío mostramos loading y boton para ir al home
+    return ( //Cuando el cart está vacío mostramos gráfico de loading y boton para ir al home (ItemListContainer)
         <div className="container mt-5 text-center">
             <CardItemDetail>
                 <div className="card-body">

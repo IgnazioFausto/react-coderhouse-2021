@@ -1,6 +1,9 @@
 import React from "react";
 
+
+//para controlar la cantidad del producto a pedir
 export const ItemCount = ({ quantity, cantidad, setCantidad }) => {
+    //condicionamos para no permitir ni cantidad en 0 ni pedir más de lo que se indica en quantity (bd)
     const handleRestar = () => {
         if (cantidad > 0) { 
         setCantidad(cantidad - 1) }

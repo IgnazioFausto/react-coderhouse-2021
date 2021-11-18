@@ -13,7 +13,7 @@ export const CartContainer = () => {
     return (
         <div className="container">
 
-            {   
+            {  
                 cart.length === 0
                 ?   //si el cart está vacío.
                 <>

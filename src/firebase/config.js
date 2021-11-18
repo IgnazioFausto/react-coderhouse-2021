@@ -2,7 +2,7 @@ import firebase from 'firebase/app'
 import 'firebase/firestore'
 
 
-// Your web app's Firebase configuration
+// config de firebase/firestore
 const firebaseConfig = {
   apiKey: "AIzaSyCTV6vswVrZQjbi6NaCheCeanGITRx7-NE",
   authDomain: "mi-huertapp.firebaseapp.com",
